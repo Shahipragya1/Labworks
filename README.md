@@ -10,6 +10,7 @@
 #Steps:
 ------------------------------
 step1: Open terminal in vscode. (zsh)
+
 step2: check if the directory is same as a repo you created i.e. Labworks; if not change directory (cd) to it.
 step3: write "git pull origin main --rebase"
 step4: git add. or [ git add <resolved-file> ]
