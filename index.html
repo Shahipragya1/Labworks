@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Information Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Information Form</h1>
+
+        <form id="userForm" onsubmit="return validateForm()">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" required>
+
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" required>
+
+            <label for="address">Address:</label>
+            <input type="text" id="address" required>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" required>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" required>
+
+            <label for="zipCode">Zip Code:</label>
+            <input type="text" id="zipCode" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" pattern="[0-9]{10}" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" required>
+
+            <label for="birthDate">Birth Date (YYYY-MM-DD):</label>
+            <input type="text" id="birthDate" pattern="\d{4}-\d{2}-\d{2}" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+
+        <div id="confirmation" style="display: none;">
+            <h2>Confirmation Page</h2>
+            <p><strong>First Name:</strong> <span id="confirmFirstName"></span></p>
+            <p><strong>Last Name:</strong> <span id="confirmLastName"></span></p>
+            <p><strong>Address:</strong> <span id="confirmAddress"></span></p>
+            <p><strong>City:</strong> <span id="confirmCity"></span></p>
+            <p><strong>State:</strong> <span id="confirmState"></span></p>
+            <p><strong>Zip Code:</strong> <span id="confirmZipCode"></span></p>
+            <p><strong>Phone Number:</strong> <span id="confirmPhone"></span></p>
+            <p><strong>Email Address:</strong> <span id="confirmEmail"></span></p>
+            <p><strong>Birth Date:</strong> <span id="confirmBirthDate"></span></p>
+            <p><strong>Message:</strong> <span id="confirmMessage"></span></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
